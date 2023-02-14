@@ -12,7 +12,7 @@ RSpec.describe 'all pattern' do
     account_balances = {
       checking: 0,
       saving: 0,
-      retirement_401k: 0,
+      retirement_401k: 350_000,
       retirement_ira: 0,
     }
     all_zeros = true
@@ -21,12 +21,12 @@ RSpec.describe 'all pattern' do
         all_zeros = false
       end
     end
-    expect(all_zeros).to be true
+    expect(all_zeros).to be false
   end
 
   xit 'test 3' do
     words = ["love", "hate", "fire", "bird", "call"]
-    all_four_letters = true
+    all_four_letters = false
     words.each do |word|
       # Your Code Here
     end
